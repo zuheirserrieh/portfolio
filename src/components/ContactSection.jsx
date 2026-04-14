@@ -8,7 +8,7 @@ function ContactSection() {
       <div className="contact-card">
         <div>
           <p>
-            Share your project idea, timeline, and budget. I will reply as soon as possible.
+            Share your project idea, timeline, and budget, and I will get back to you as soon as possible.
           </p>
           <div className="contact-details">
             <a
@@ -30,7 +30,7 @@ function ContactSection() {
             target="_blank"
             rel="noreferrer"
           >
-            Send email
+            Send Email
           </a>
           <a className="cta-link" href="#top">
             Back to top

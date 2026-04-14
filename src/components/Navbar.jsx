@@ -1,11 +1,13 @@
-function Navbar() {
+function Navbar({ isProjectsPage = false }) {
   return (
     <nav className="nav">
-      <span className="nav__brand">ZS</span>
+      <a className="nav__brand" href="#top">
+        ZS
+      </a>
       <div className="nav__links">
         <a href="#top">Home</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href={isProjectsPage ? "#/projects" : "#projects"}>Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>

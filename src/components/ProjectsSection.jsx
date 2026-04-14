@@ -4,6 +4,9 @@ function ProjectsSection({ projects }) {
       <div className="section__heading">
         <p className="eyebrow">Projects</p>
         <h2>Selected work</h2>
+        <p className="section-copy">
+          A quick preview of recent work. Open the full projects page to browse everything.
+        </p>
       </div>
       <div className="projects">
         {projects.map((project) => (
@@ -23,6 +26,9 @@ function ProjectsSection({ projects }) {
             </div>
           </article>
         ))}
+        <a className="cta-link projects-section__link" href="#/projects">
+          View All Projects
+        </a>
       </div>
     </section>
   );
