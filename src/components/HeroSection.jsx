@@ -1,5 +1,6 @@
 function HeroSection({ skills }) {
-  const photoUrl = `${import.meta.env.BASE_URL}WhatsApp Image 2026-01-29 at 9.27.01 AM.jpeg`;
+  const photoUrl = `${import.meta.env.BASE_URL}profile.jpeg`;
+  const cvUrl = `${import.meta.env.BASE_URL}Zuheir%20Serrieh%20-%20Cv.pdf`;
 
   return (
     <header className="hero" id="top">
@@ -9,6 +10,9 @@ function HeroSection({ skills }) {
         <p className="intro">
           I'm a Computer Science graduate with a strong interest in web development and software engineering. I have hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, and Laravel. I enjoy turning ideas into functional, user-friendly solutions and continuously improving my technical skills through real projects and learning.
         </p>
+        <a className="cta-link" href={cvUrl} target="_blank" rel="noreferrer">
+          Review CV
+        </a>
         <div className="hero__contact">
           <a
             href="https://github.com/zuheirserrieh"
