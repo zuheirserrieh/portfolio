@@ -29,75 +29,6 @@ body {
   padding: clamp(2rem, 6vw, 4.5rem);
 }
 
-.cv-notice {
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  z-index: 20;
-  width: min(360px, calc(100vw - 2rem));
-  display: grid;
-  gap: 1rem;
-  padding: 1rem 1.1rem;
-  border-radius: 18px;
-  border: 1px solid rgba(76, 255, 180, 0.28);
-  background: rgba(5, 8, 10, 0.95);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(14px);
-  animation: slideInNotice 0.55s ease both;
-}
-
-.cv-notice__eyebrow {
-  margin: 0 0 0.35rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.7rem;
-  color: rgba(76, 255, 180, 0.82);
-}
-
-.cv-notice__text {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.95rem;
-}
-
-.cv-notice__actions {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.cv-notice__button,
-.cv-notice__close {
-  appearance: none;
-  border: 0;
-  border-radius: 999px;
-  padding: 0.7rem 1rem;
-  font: inherit;
-  font-size: 0.84rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.cv-notice__button {
-  background: #4cffb4;
-  color: #050505;
-}
-
-.cv-notice__button:hover {
-  background: #7fffd0;
-}
-
-.cv-notice__close {
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.cv-notice__close:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
-
 .nav {
   width: min(1100px, 100%);
   margin: 0 auto 2.5rem;
@@ -174,12 +105,6 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.hero__links {
-  display: grid;
-  gap: 1.25rem;
-  margin-bottom: 2.5rem;
-}
-
 .cta-link {
   font-size: 1rem;
   font-weight: 600;
@@ -206,6 +131,7 @@ body {
   gap: 1rem 2rem;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
 }
 
 .hero__contact a {
@@ -280,17 +206,6 @@ body {
       }
 }
 
-@keyframes slideInNotice {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -18px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @media (max-width: 900px) {
   .nav {
     flex-direction: column;
@@ -312,11 +227,6 @@ body {
     width: min(320px, 70vw);
   }
 
-  .cv-notice {
-    top: 1rem;
-    right: 1rem;
-    width: min(340px, calc(100vw - 2rem));
-  }
 }
 
 @media (max-width: 600px) {
@@ -366,11 +276,6 @@ body {
     justify-content: center;
   }
 
-  .cv-notice {
-    position: static;
-    width: 100%;
-    margin: 0 auto 1.25rem;
-  }
 }
 
 .section {
