@@ -8,12 +8,12 @@ export const allProjects = [
     link: "https://github.com/zuheirserrieh/FastApi",
   },
   {
-    title: "The Digital Hub",
+    title: "The Digital Hub Website",
     description:
-      "A full-stack Digital Hub platform with a public website, admin dashboard, Express API, and PostgreSQL-backed CMS workflows.",
-    tags: ["TypeScript", "React", "Express"],
+      "Developed a full-stack MERN application with a responsive React frontend and RESTful APIs, delivering a scalable and high-performance platform for industrial and trading operations.",
+    tags: ["MERN", "React", "REST API"],
     filters: ["Full Stack", "React"],
-    link: "https://github.com/zuheirserrieh/thedigitalhub",
+    link: "https://thedigitalhub.tech/",
   },
   {
     title: "ISD Events & Chatbot",
@@ -32,12 +32,20 @@ export const allProjects = [
     link: "https://github.com/zuheirserrieh/next",
   },
   {
-    title: "Bekai Website",
+    title: "Al-Bekai Group Website",
     description:
-      "Corporate website for Bekai Group with multilingual content, product catalog sections, branch information, and contact details for retail and wholesale operations.",
-    tags: ["Business Website", "Multilingual", "Catalog"],
+      "Built a responsive corporate website, implemented interactive UI components, and ensured cross-browser compatibility.",
+    tags: ["Corporate Website", "Responsive UI", "JavaScript"],
     filters: ["Frontend"],
-    link: "https://bekai-group.com/",
+    link: "https://bekai-group.com/en/sainik-traiding-company",
+  },
+  {
+    title: "Multi-Vendor E-Commerce Marketplace",
+    description:
+      "Built a full-stack multi-vendor e-commerce platform using Laravel and React.js, featuring Stripe payments, real-time WebSocket updates, role-based access control, and complete order and product catalog management.",
+    tags: ["Laravel", "React", "Stripe"],
+    filters: ["Full Stack", "React", "Laravel"],
+    link: "https://github.com/zuheirserrieh",
   },
   {
     title: "Portfolio",
@@ -74,10 +82,24 @@ export const allProjects = [
 ];
 
 export const featuredProjects = allProjects.filter((project) =>
-  ["The Digital Hub", "Zuheir Realty"].includes(project.title),
+  [
+    "The Digital Hub Website",
+    "Al-Bekai Group Website",
+    "Multi-Vendor E-Commerce Marketplace",
+  ].includes(project.title),
 );
 
-export const projectFilters = ["All", "Frontend", "Full Stack", "Backend", "React", "Next.js", "PHP", "Flutter"];
+export const projectFilters = [
+  "All",
+  "Frontend",
+  "Full Stack",
+  "Backend",
+  "React",
+  "Next.js",
+  "Laravel",
+  "PHP",
+  "Flutter",
+];
 
 export const skills = [
   "React",

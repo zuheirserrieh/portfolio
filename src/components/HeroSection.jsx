@@ -1,5 +1,5 @@
 function HeroSection({ skills }) {
-  const photoUrl = `${import.meta.env.BASE_URL}profile.jpeg`;
+  const photoUrl = `${import.meta.env.BASE_URL}me.jpeg`;
   const cvUrl = `${import.meta.env.BASE_URL}Zuheir%20Serrieh%20-%20Cv.pdf`;
 
   return (

@@ -18,7 +18,12 @@ function App() {
 
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentPage(getCurrentPage());
+      const nextPage = getCurrentPage();
+      setCurrentPage(nextPage);
+
+      if (nextPage !== "home") {
+        setShowCvNotice(false);
+      }
     };
 
     window.addEventListener("hashchange", handleHashChange);
@@ -30,7 +35,6 @@ function App() {
 
   useEffect(() => {
     if (currentPage !== "home") {
-      setShowCvNotice(false);
       return undefined;
     }
 
