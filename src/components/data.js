@@ -16,7 +16,7 @@ export const allProjects = [
     link: "https://thedigitalhub.tech/",
   },
   {
-    title: "ISD Events & Chatbot",
+    title: "City Explorer (ISD)",
     description:
       "A PHP web app that combines city data, event lookups, and chatbot interactions in a browser-based interface.",
     tags: ["PHP", "JavaScript", "HTML/CSS"],
@@ -55,30 +55,6 @@ export const allProjects = [
     filters: ["Frontend", "React"],
     link: "https://github.com/zuheirserrieh/portfolio",
   },
-  {
-    title: "MobileP Library App",
-    description:
-      "Flutter mobile app for browsing and searching books, backed by PHP endpoints and a small library database.",
-    tags: ["Flutter", "Dart", "PHP API"],
-    filters: ["Flutter", "PHP"],
-    link: "https://github.com/zuheirserrieh/mobilep",
-  },
-  {
-    title: "Zuheir Gym",
-    description:
-      "Fitness website variant with membership pages, workout-focused landing sections, and simple PHP auth flows.",
-    tags: ["PHP", "HTML/CSS", "Fitness"],
-    filters: ["Frontend", "PHP"],
-    link: "https://github.com/zuheirserrieh/zuheirgym",
-  },
-  {
-    title: "Project 1 - Call Cost Calculator",
-    description:
-      "Flutter exercise app for calculating telephone call pricing with local and roaming rates, duration input, and discount logic.",
-    tags: ["Flutter", "Dart", "Calculator"],
-    filters: ["Flutter"],
-    link: "https://github.com/zuheirserrieh/project1",
-  },
 ];
 
 export const featuredProjects = allProjects.filter((project) =>
@@ -98,7 +74,6 @@ export const projectFilters = [
   "Next.js",
   "Laravel",
   "PHP",
-  "Flutter",
 ];
 
 export const skills = [

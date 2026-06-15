@@ -35,6 +35,21 @@ function ProjectsPage({ projects, filters }) {
           ))}
         </div>
 
+        <label className="filter-select" htmlFor="project-filter">
+          <span>Project filter</span>
+          <select
+            id="project-filter"
+            value={activeFilter}
+            onChange={(event) => setActiveFilter(event.target.value)}
+          >
+            {filters.map((filter) => (
+              <option key={filter} value={filter}>
+                {filter}
+              </option>
+            ))}
+          </select>
+        </label>
+
         <div className="projects">
           {visibleProjects.map((project) => (
             <article key={project.title} className="project-card">

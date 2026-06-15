@@ -356,9 +356,38 @@ body {
     align-items: flex-start;
   }
 
-  .filter-button {
+  .filter-bar {
+    display: none;
+  }
+
+  .filter-select {
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .filter-select span {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .filter-select select {
     width: 100%;
-    justify-content: center;
+    border: 1px solid rgba(76, 255, 180, 0.32);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    padding: 0.9rem 1rem;
+    outline: none;
+  }
+
+  .filter-select select:focus {
+    border-color: #4cffb4;
+    box-shadow: 0 0 0 3px rgba(76, 255, 180, 0.16);
   }
 
   .cv-notice {
@@ -429,6 +458,10 @@ body {
   gap: 0.75rem;
 }
 
+.filter-select {
+  display: none;
+}
+
 .filter-button {
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.04);
@@ -471,6 +504,7 @@ body {
 .project-card h3 a {
   color: #ffffff;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .project-card h3 a:hover {
@@ -545,6 +579,10 @@ body {
 @media (max-width: 420px) {
   .page {
     padding: 1.5rem 1.1rem;
+  }
+
+  .hero__photo img {
+    width: min(260px, 72vw);
   }
 
   .cta-link {
