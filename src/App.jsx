@@ -14,7 +14,7 @@ function getCurrentPage() {
 function App() {
   const [currentPage, setCurrentPage] = useState(getCurrentPage);
   const [showCvNotice, setShowCvNotice] = useState(false);
-  const cvUrl = `${import.meta.env.BASE_URL}Zuheir%20Serrieh%20-%20Cv.pdf`;
+  const cvUrl = `${import.meta.env.BASE_URL}Zuheir%20Serrieh%20-%20Cv%202026-06.pdf`;
 
   useEffect(() => {
     const handleHashChange = () => {
