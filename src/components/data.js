@@ -1,35 +1,67 @@
 export const allProjects = [
   {
-    title: "FastAPI Auth API",
+    title: "Doodlzz E-Commerce Store",
     description:
-      "Authentication and analytics API built with FastAPI, SQLAlchemy, JWT, and role-based user management.",
-    tags: ["FastAPI", "Python", "JWT"],
-    filters: ["Backend"],
-    link: "https://github.com/zuheirserrieh/FastApi",
+      "Bilingual (English/Arabic, RTL) storefront for a kids' toys and baby products retailer, with accounts, favorites, cart, search, a row-level-secured PostgreSQL schema, server-side checkout, and an admin dashboard.",
+    tags: ["Next.js", "Supabase", "Cloudflare Workers"],
+    filters: ["Full Stack", "Next.js"],
+    link: "https://doodlzz-website.doodlzzlb.workers.dev/en",
   },
   {
-    title: "The Digital Hub Website",
+    title: "Gentle Elevators Website",
     description:
-      "Developed a full-stack MERN application with a responsive React frontend and RESTful APIs, delivering a scalable and high-performance platform for industrial and trading operations.",
-    tags: ["MERN", "React", "REST API"],
+      "Bilingual, SEO-optimized corporate website for an elevator company in Lebanon, with service and project gallery pages and WhatsApp, call, and quote-request contact flows, live on a custom domain.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    filters: ["Frontend", "Next.js"],
+    link: "https://gentleelevators.com/",
+  },
+  {
+    title: "The Digital Hub Platform",
+    description:
+      "CMS-driven employability platform presenting training programs and cohorts, with cohort applications, participant and team directories, announcements, and recruiter visit requests, backed by a TypeScript Express API.",
+    tags: ["React", "TypeScript", "PostgreSQL"],
     filters: ["Full Stack", "React"],
     link: "https://thedigitalhub.tech/",
   },
   {
-    title: "City Explorer (ISD)",
+    title: "Joker Multi-Vendor Marketplace",
     description:
-      "A PHP web app that combines city data, event lookups, and chatbot interactions in a browser-based interface.",
-    tags: ["PHP", "JavaScript", "HTML/CSS"],
-    filters: ["Frontend", "PHP"],
-    link: "https://github.com/zuheirserrieh/isd",
+      "Multi-vendor marketplace with Stripe checkout, vendor and admin portals, sales analytics, role-based access control, and AI vendor tools such as Claude-generated product descriptions.",
+    tags: ["Laravel", "React", "Stripe"],
+    filters: ["Full Stack", "React", "Laravel"],
+    link: "https://github.com/zuheirserrieh/joker-ecommerce",
+  },
+  {
+    title: "Northstar Supply",
+    description:
+      "Full-stack e-commerce demo with a Django REST Framework API, JWT authentication, Django Admin reports, and a React storefront.",
+    tags: ["Django", "React", "JWT"],
+    filters: ["Full Stack", "Backend", "React"],
+    link: "https://github.com/zuheirserrieh/northstar-supply",
+  },
+  {
+    title: "FastAPI Auth API",
+    description:
+      "Authentication and analytics API built with FastAPI, SQLAlchemy, and JWT, with role-based authorization, validation, and paginated user management.",
+    tags: ["FastAPI", "Python", "JWT"],
+    filters: ["Backend"],
+    link: "https://github.com/zuheirserrieh/fastapi-auth-api",
   },
   {
     title: "Zuheir Realty",
     description:
-      "Simple Next.js real-estate website with public pages, shared components, and an admin panel.",
-    tags: ["Next.js", "TypeScript", "Admin"],
-    filters: ["Frontend", "Next.js"],
-    link: "https://github.com/zuheirserrieh/next",
+      "Next.js marketing website with a file-based admin CMS for pages, services, projects, blog, and news, plus role-based admin accounts and inbound submissions.",
+    tags: ["Next.js", "TypeScript", "CMS"],
+    filters: ["Full Stack", "Next.js"],
+    link: "https://github.com/zuheirserrieh/zuheir-realty",
+  },
+  {
+    title: "City Explorer",
+    description:
+      "Explore a city through Wikipedia history summaries, Ticketmaster events, maps, and a built-in Q&A chatbot.",
+    tags: ["Vue 3", "PHP", "JavaScript"],
+    filters: ["Frontend", "PHP"],
+    link: "https://github.com/zuheirserrieh/isd",
   },
   {
     title: "Al-Bekai Group Website",
@@ -38,14 +70,6 @@ export const allProjects = [
     tags: ["Corporate Website", "Responsive UI", "JavaScript"],
     filters: ["Frontend"],
     link: "https://bekai-group.com/en/sainik-traiding-company",
-  },
-  {
-    title: "Multi-Vendor E-Commerce Marketplace",
-    description:
-      "Built a full-stack multi-vendor e-commerce platform using Laravel and React.js, featuring Stripe payments, real-time WebSocket updates, role-based access control, and complete order and product catalog management.",
-    tags: ["Laravel", "React", "Stripe"],
-    filters: ["Full Stack", "React", "Laravel"],
-    link: "https://github.com/zuheirserrieh",
   },
   {
     title: "Portfolio",
@@ -59,9 +83,9 @@ export const allProjects = [
 
 export const featuredProjects = allProjects.filter((project) =>
   [
-    "The Digital Hub Website",
-    "Al-Bekai Group Website",
-    "Multi-Vendor E-Commerce Marketplace",
+    "Doodlzz E-Commerce Store",
+    "Gentle Elevators Website",
+    "The Digital Hub Platform",
   ].includes(project.title),
 );
 
