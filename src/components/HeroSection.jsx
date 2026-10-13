@@ -8,7 +8,7 @@ function HeroSection() {
       <div className="hero__content">
         <p className="status">
           <span className="status__dot" aria-hidden="true" />
-          Open to full-time roles
+          Open to full-stack roles
         </p>
         <h1>{profile.name}</h1>
         <p className="hero__headline">
