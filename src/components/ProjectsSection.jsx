@@ -6,7 +6,7 @@ function ProjectsSection({ projects }) {
       <div className="section__heading">
         <p className="eyebrow">Selected work</p>
         <h2>Shipped and in production</h2>
-        <p className="section-copy">Two client sites and a team platform, all live today.</p>
+        <p className="section-copy">Real products for clients and teams, live in production.</p>
       </div>
       <div className="project-grid">
         {projects.map((project) => (

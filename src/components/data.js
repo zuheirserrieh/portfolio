@@ -11,7 +11,7 @@ export const cvUrl = `${import.meta.env.BASE_URL}Zuheir%20Serrieh%20-%20Cv%20202
 
 export const heroFacts = [
   { value: "1+ year", label: "building production web apps" },
-  { value: "3 live sites", label: "Doodlzz, Gentle Elevators, The Digital Hub" },
+  { value: "End to end", label: "From database design to deployment" },
   { value: "B.S. CS", label: "Lebanese International University, 2025" },
 ];
 
