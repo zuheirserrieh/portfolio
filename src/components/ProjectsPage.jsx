@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import ProjectCard from "./ProjectCard";
 
 function ProjectsPage({ projects, filters }) {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -11,32 +12,41 @@ function ProjectsPage({ projects, filters }) {
     return projects.filter((project) => project.filters.includes(activeFilter));
   }, [activeFilter, projects]);
 
+  const countFor = (filter) =>
+    filter === "All"
+      ? projects.length
+      : projects.filter((project) => project.filters.includes(filter)).length;
+
   return (
-    <main className="projects-page">
-      <section className="section section--stacked" id="projects-page">
-        <div className="section__heading section__heading--wide">
-          <p className="eyebrow">Projects Archive</p>
-          <h2>All Projects</h2>
+    <main className="projects-page container">
+      <section className="section section--first" id="projects-page">
+        <a className="text-link" href="#top">
+          ← Back to home
+        </a>
+        <div className="section__heading">
+          <p className="eyebrow">Projects archive</p>
+          <h2>All projects</h2>
           <p className="section-copy">
-            Browse the full collection and filter by the stack you want to review.
+            Client work, team work, and personal builds. Filter by the stack you&apos;re hiring for.
           </p>
         </div>
 
-        <div className="filter-bar" aria-label="Project filters">
+        <div className="filter-bar" role="group" aria-label="Project filters">
           {filters.map((filter) => (
             <button
               key={filter}
               type="button"
+              aria-pressed={filter === activeFilter}
               className={filter === activeFilter ? "filter-button is-active" : "filter-button"}
               onClick={() => setActiveFilter(filter)}
             >
-              {filter}
+              {filter} <span className="filter-button__count">{countFor(filter)}</span>
             </button>
           ))}
         </div>
 
         <label className="filter-select" htmlFor="project-filter">
-          <span>Project filter</span>
+          <span>Filter by stack</span>
           <select
             id="project-filter"
             value={activeFilter}
@@ -44,29 +54,15 @@ function ProjectsPage({ projects, filters }) {
           >
             {filters.map((filter) => (
               <option key={filter} value={filter}>
-                {filter}
+                {filter} ({countFor(filter)})
               </option>
             ))}
           </select>
         </label>
 
-        <div className="projects">
+        <div className="project-grid project-grid--two">
           {visibleProjects.map((project) => (
-            <article key={project.title} className="project-card">
-              <div>
-                <h3>
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    {project.title}
-                  </a>
-                </h3>
-                <p>{project.description}</p>
-              </div>
-              <div className="tags">
-                {project.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </div>
-            </article>
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </section>

@@ -1,35 +1,21 @@
+import ProjectCard from "./ProjectCard";
+
 function ProjectsSection({ projects }) {
   return (
-    <section className="section" id="projects">
+    <section className="section container" id="projects">
       <div className="section__heading">
-        <p className="eyebrow">Projects</p>
-        <h2>Selected work</h2>
-        <p className="section-copy">
-          A quick preview of recent work. Open the full projects page to browse everything.
-        </p>
+        <p className="eyebrow">Selected work</p>
+        <h2>Shipped and in production</h2>
+        <p className="section-copy">Two client sites and a team platform, all live today.</p>
       </div>
-      <div className="projects">
+      <div className="project-grid">
         {projects.map((project) => (
-          <article key={project.title} className="project-card">
-            <div>
-              <h3>
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  {project.title}
-                </a>
-              </h3>
-              <p>{project.description}</p>
-            </div>
-            <div className="tags">
-              {project.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-          </article>
+          <ProjectCard key={project.title} project={project} />
         ))}
-        <a className="cta-link projects-section__link" href="#/projects">
-          View All Projects
-        </a>
       </div>
+      <a className="text-link" href="#/projects">
+        Browse all projects →
+      </a>
     </section>
   );
 }
