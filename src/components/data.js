@@ -28,7 +28,7 @@ export const allProjects = [
     ],
     tags: ["Next.js", "TypeScript", "Supabase", "Cloudflare Workers"],
     filters: ["Full Stack", "Next.js"],
-    live: "https://doodlzz-website.doodlzzlb.workers.dev/en",
+    live: "https://doodlzzlb.com/en",
   },
   {
     title: "Gentle Elevators",
